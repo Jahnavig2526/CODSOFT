@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom styles */
+    .Home-Page {
+      background-image: url('https://media.giphy.com/media/xUA7b4arnbo3THfzi0/giphy.gif');
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh; /* Ensures full viewport height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center; /* Centers text horizontally */
+      color:black; /* Sets text color to white */
+    }
+    
+    .Home-Page h2, .Home-Page a {
+      margin-left: auto; /* Centers h2 and a horizontally */
+      margin-right: auto;
+    }
+    
+    .navbar-brand {
+      font-size: 24px;
+      transition: color 0.3s;
+      color: white;
+    }
+    
+    .navbar-toggler-icon {
+      color: white; /* Color of the navbar toggler icon */
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+      color: rgba(189, 255, 5, 0.81); /* Corrected RGBA syntax */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand" href="#">Book Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Books</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="Home-Page">
+    <div>
+      <h2>Welcome to our Book Store!</h2>
+      <a href="#" class="btn btn-primary mt-3">Browse Books</a>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript; Bootstrap bundle with Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
